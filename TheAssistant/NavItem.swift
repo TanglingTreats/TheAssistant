@@ -1,6 +1,6 @@
 //
 //  NavItem.swift
-//  Playground
+//  TheAssistant
 //
 //  Created by Edwin Tang on 8/5/24.
 //

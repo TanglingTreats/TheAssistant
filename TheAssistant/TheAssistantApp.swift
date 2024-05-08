@@ -1,6 +1,6 @@
 //
-//  PlaygroundApp.swift
-//  Playground
+//  TheAssistantApp.swift
+//  TheAssistant
 //
 //  Created by Edwin Tang on 8/5/24.
 //
