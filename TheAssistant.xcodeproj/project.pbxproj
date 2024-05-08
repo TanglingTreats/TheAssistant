@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3488D0052BEB0E040044048F /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0042BEB0E040044048F /* PlaygroundApp.swift */; };
+		3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0042BEB0E040044048F /* TheAssistantApp.swift */; };
 		3488D0072BEB0E040044048F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0062BEB0E040044048F /* ContentView.swift */; };
 		3488D0092BEB0E040044048F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0082BEB0E040044048F /* Item.swift */; };
 		3488D00B2BEB0E050044048F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3488D00A2BEB0E050044048F /* Assets.xcassets */; };
 		3488D00E2BEB0E050044048F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3488D00D2BEB0E050044048F /* Preview Assets.xcassets */; };
+		3488D0162BEB1FE20044048F /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0152BEB1FE20044048F /* AppMenu.swift */; };
+		3488D0182BEB236E0044048F /* GoogleGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0172BEB236E0044048F /* GoogleGround.swift */; };
+		3488D01A2BEB2DC00044048F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0192BEB2DC00044048F /* AppData.swift */; };
+		349AEAB92BEB701500424AC9 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349AEAB82BEB701500424AC9 /* NavItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3488D0012BEB0E040044048F /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3488D0042BEB0E040044048F /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
+		3488D0012BEB0E040044048F /* TheAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3488D0042BEB0E040044048F /* TheAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheAssistantApp.swift; sourceTree = "<group>"; };
 		3488D0062BEB0E040044048F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3488D0082BEB0E040044048F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3488D00A2BEB0E050044048F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3488D00D2BEB0E050044048F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3488D00F2BEB0E050044048F /* Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Playground.entitlements; sourceTree = "<group>"; };
+		3488D00F2BEB0E050044048F /* TheAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheAssistant.entitlements; sourceTree = "<group>"; };
+		3488D0152BEB1FE20044048F /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		3488D0172BEB236E0044048F /* GoogleGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGround.swift; sourceTree = "<group>"; };
+		3488D0192BEB2DC00044048F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		349AEAB82BEB701500424AC9 /* NavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		3488CFF82BEB0E040044048F = {
 			isa = PBXGroup;
 			children = (
-				3488D0032BEB0E040044048F /* Playground */,
+				3488D0032BEB0E040044048F /* TheAssistant */,
 				3488D0022BEB0E040044048F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,22 +54,26 @@
 		3488D0022BEB0E040044048F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3488D0012BEB0E040044048F /* Playground.app */,
+				3488D0012BEB0E040044048F /* TheAssistant.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3488D0032BEB0E040044048F /* Playground */ = {
+		3488D0032BEB0E040044048F /* TheAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				3488D0042BEB0E040044048F /* PlaygroundApp.swift */,
+				3488D0042BEB0E040044048F /* TheAssistantApp.swift */,
 				3488D0062BEB0E040044048F /* ContentView.swift */,
 				3488D0082BEB0E040044048F /* Item.swift */,
 				3488D00A2BEB0E050044048F /* Assets.xcassets */,
-				3488D00F2BEB0E050044048F /* Playground.entitlements */,
+				3488D00F2BEB0E050044048F /* TheAssistant.entitlements */,
 				3488D00C2BEB0E050044048F /* Preview Content */,
+				3488D0152BEB1FE20044048F /* AppMenu.swift */,
+				3488D0172BEB236E0044048F /* GoogleGround.swift */,
+				3488D0192BEB2DC00044048F /* AppData.swift */,
+				349AEAB82BEB701500424AC9 /* NavItem.swift */,
 			);
-			path = Playground;
+			path = TheAssistant;
 			sourceTree = "<group>";
 		};
 		3488D00C2BEB0E050044048F /* Preview Content */ = {
@@ -75,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3488D0002BEB0E040044048F /* Playground */ = {
+		3488D0002BEB0E040044048F /* TheAssistant */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3488D0122BEB0E050044048F /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildConfigurationList = 3488D0122BEB0E050044048F /* Build configuration list for PBXNativeTarget "TheAssistant" */;
 			buildPhases = (
 				3488CFFD2BEB0E040044048F /* Sources */,
 				3488CFFE2BEB0E040044048F /* Frameworks */,
@@ -87,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = Playground;
+			name = TheAssistant;
 			productName = Playground;
-			productReference = 3488D0012BEB0E040044048F /* Playground.app */;
+			productReference = 3488D0012BEB0E040044048F /* TheAssistant.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3488CFFC2BEB0E040044048F /* Build configuration list for PBXProject "Playground" */;
+			buildConfigurationList = 3488CFFC2BEB0E040044048F /* Build configuration list for PBXProject "TheAssistant" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3488D0002BEB0E040044048F /* Playground */,
+				3488D0002BEB0E040044048F /* TheAssistant */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +156,11 @@
 			files = (
 				3488D0072BEB0E040044048F /* ContentView.swift in Sources */,
 				3488D0092BEB0E040044048F /* Item.swift in Sources */,
-				3488D0052BEB0E040044048F /* PlaygroundApp.swift in Sources */,
+				3488D0162BEB1FE20044048F /* AppMenu.swift in Sources */,
+				3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */,
+				3488D0182BEB236E0044048F /* GoogleGround.swift in Sources */,
+				349AEAB92BEB701500424AC9 /* NavItem.swift in Sources */,
+				3488D01A2BEB2DC00044048F /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,15 +290,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TheAssistant/TheAssistant.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TheAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = KQL6X4C4NX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,15 +320,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TheAssistant/TheAssistant.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TheAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = KQL6X4C4NX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3488CFFC2BEB0E040044048F /* Build configuration list for PBXProject "Playground" */ = {
+		3488CFFC2BEB0E040044048F /* Build configuration list for PBXProject "TheAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3488D0102BEB0E050044048F /* Debug */,
@@ -337,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3488D0122BEB0E050044048F /* Build configuration list for PBXNativeTarget "Playground" */ = {
+		3488D0122BEB0E050044048F /* Build configuration list for PBXNativeTarget "TheAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3488D0132BEB0E050044048F /* Debug */,
