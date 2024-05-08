@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct AssistantCommands: Commands {
+    @Environment(\.openWindow) private var openWindow
     
     var body: some Commands {
-        CommandMenu("Assistant") {
-            Button("Option") {
-                
+        CommandGroup(replacing: .newItem) {
+            Button("Open Assistant") {
+                openWindow(id: "main")
             }
+            .keyboardShortcut(KeyEquivalent("n"), modifiers: [.command])
         }
     }
 }

@@ -49,10 +49,11 @@ struct TheAssistantApp: App {
         }
         .menuBarExtraStyle(.window)
         
-        WindowGroup {
+        WindowGroup("The Assistant", id: "main") {
             ContentView()
                 .environmentObject(appData)
         }
+        .commands{AssistantCommands()}
         .modelContainer(sharedModelContainer)
         
         Settings {
