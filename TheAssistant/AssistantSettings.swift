@@ -15,22 +15,30 @@ struct AssistantSettings: View {
     @State var selectedType: SettingType = SettingType.search
     
     var body: some View {
-            VStack(alignment: .center, spacing: 20){
+            VStack(alignment: .center, spacing: 15){
                 ControlGroup{
+                    // Could probably optimise the buttons
                     Button("Search"){ selectedType = .search }
                     Button("Delegate"){ selectedType = .delegate }
                 }
                 
-                VStack(alignment: .center) {
+                VStack(alignment: .leading) {
                     switch (selectedType) {
                     case .search:
-                        Text("Search")
+                        Form {
+                            Text("Search")
+                        }
                     case .delegate:
-                        Text("Delegate")
+                        Form {
+                            Text("Delegate")
+                        }
                     }
+                    Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding()
                 .background()
+                .cornerRadius(8.0)
             }
             .padding()
             .frame(minWidth: 700, minHeight: 400)
