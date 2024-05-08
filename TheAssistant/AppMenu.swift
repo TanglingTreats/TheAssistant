@@ -14,7 +14,7 @@ struct AppMenu: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("Playground")
+            Text("The Assistant")
             TextField("What do you want to Google?", text: $query)
                 .padding(3)
                 .textFieldStyle(.roundedBorder)
