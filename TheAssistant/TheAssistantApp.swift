@@ -54,5 +54,9 @@ struct TheAssistantApp: App {
                 .environmentObject(appData)
         }
         .modelContainer(sharedModelContainer)
+        
+        Settings {
+            AssistantSettings()
+        }
     }
 }
