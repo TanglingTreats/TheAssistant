@@ -12,7 +12,8 @@ import SwiftData
 struct TheAssistantApp: App {
     // Global app state
     @StateObject var appData = AppData()
-    
+    @State private var selection: NavItem?
+
     var sharedModelContainer: ModelContainer = {
         
         let schema = Schema([
@@ -39,17 +40,18 @@ struct TheAssistantApp: App {
         }
     }()
     
+    let navs = getNavItems()
 
     var body: some Scene {
         
         MenuBarExtra("TheAssistant", systemImage: "tent.2.fill") {
-            AppMenu()
+            AppMenu(selection: $selection, navs: navs)
                 .environmentObject(appData)
         }
         .menuBarExtraStyle(.window)
         
         Window("The Assistant", id: "main") {
-            ContentView(navs: getNavItems())
+            ContentView(selection: $selection, navs: navs)
                 .environmentObject(appData)
         }
         .commands{AssistantCommands()}

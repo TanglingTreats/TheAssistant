@@ -9,11 +9,15 @@ import SwiftUI
 
 struct AppMenu: View {
     @State private var query: String = ""
+    @Binding var selection: NavItem?
+    
     @FocusState private var searchFieldIsFocused: Bool
     @EnvironmentObject var appData: AppData
     
     @Environment(\.openWindow) private var openWindow
 
+    let navs : [NavItem]
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("The Assistant")
@@ -35,11 +39,14 @@ struct AppMenu: View {
     }
     
     func viewResults() {
+        selection = navs.first(where: {$0.type == .search})
         openWindow(id: "main")
     }
 }
 
 #Preview {
-    AppMenu()
+    @State var selection: NavItem?
+    
+    return AppMenu(selection: $selection, navs: getNavItems())
         .environmentObject(AppData())
 }

@@ -11,9 +11,10 @@ import SwiftData
 struct ContentView: View {
     @EnvironmentObject var appData: AppData
     @Environment(\.modelContext) private var modelContext
+    @Binding var selection: NavItem?
+
     let navs: [NavItem]
     
-    @State private var selection: NavItem?
 
     var body: some View {
         NavigationSplitView {
@@ -54,6 +55,7 @@ struct ContentView: View {
 }
 
 #Preview {
+    @State var selection: NavItem?
     let previewContainer: ModelContainer = {
         do {
             let schema = Schema([NavItem.self])
@@ -71,7 +73,7 @@ struct ContentView: View {
         }
     }()
     
-    return ContentView(navs: getNavItems())
+    return ContentView(selection: $selection, navs: getNavItems())
         .modelContainer(previewContainer)
         .environmentObject(AppData())
 }
