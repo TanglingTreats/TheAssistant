@@ -10,5 +10,5 @@ import Foundation
 // Send query to backend to process data
 func googleQuery(_ query: String, _ appData: AppData) {
     appData.hasResults = true;
-    appData.assist = AssistType.search
+    appData.assist = .search
 }

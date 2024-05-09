@@ -21,17 +21,16 @@ struct TheAssistantApp: App {
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
-            let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
-            
-            var itemFetchDescriptor = FetchDescriptor<NavItem>()
-            itemFetchDescriptor.fetchLimit = 1
-            
-            guard try container.mainContext.fetch(itemFetchDescriptor).count == 0 else { return container }
+            var container = try ModelContainer(for: schema, configurations: [modelConfiguration])
 
             let navs = getNavItems()
-            for nav in navs {
-                container.mainContext.insert(nav)
-            }
+            var itemFetchDescriptor = FetchDescriptor<NavItem>()
+            itemFetchDescriptor.fetchLimit = navs.count
+            
+            let navsCount = try container.mainContext.fetch(itemFetchDescriptor).count
+            
+            guard navsCount == navs.count else { return container }
+
             
             return container
             
@@ -50,7 +49,7 @@ struct TheAssistantApp: App {
         .menuBarExtraStyle(.window)
         
         Window("The Assistant", id: "main") {
-            ContentView()
+            ContentView(navs: getNavItems())
                 .environmentObject(appData)
         }
         .commands{AssistantCommands()}

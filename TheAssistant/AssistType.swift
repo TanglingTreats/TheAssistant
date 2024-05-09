@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AssistType: String, CaseIterable, Codable, Hashable {
+enum AssistType: String, CaseIterable, Codable {
     case search = "Googling"
     case delegate = "Delegating"
 }

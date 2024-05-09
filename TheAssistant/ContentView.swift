@@ -11,24 +11,16 @@ import SwiftData
 struct ContentView: View {
     @EnvironmentObject var appData: AppData
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [NavItem]
+    let navs: [NavItem]
+    
+    @State private var selection: NavItem?
 
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Viewing \(item.title)")
-                    } label: {
-                        Text(item.title)
-                    }
-                }
-//                .onDelete(perform: deleteItems)
+            List (navs, id: \.self, selection: $selection) { item in
+                NavigationLink(item.title, value: item)
             }
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            .navigationDestination(for: AssistType.self) { type in
-                Text("Viewing \(type.rawValue)")
-            }
 //            .toolbar {
 //                ToolbarItem {
 //                    Button(action: addItem) {
@@ -37,7 +29,11 @@ struct ContentView: View {
 //                }
 //            }
         } detail: {
-            Text("Select a function")
+            if let action = selection {
+                Text("Viewing \(action.title)")
+            } else {
+                Text("Select a function")
+            }
         }
     }
 
@@ -51,7 +47,7 @@ struct ContentView: View {
 //    private func deleteItems(offsets: IndexSet) {
 //        withAnimation {
 //            for index in offsets {
-//                modelContext.delete(items[index])
+//                modelContext.delete(navs[index])
 //            }
 //        }
 //    }
@@ -75,7 +71,7 @@ struct ContentView: View {
         }
     }()
     
-    return ContentView()
+    return ContentView(navs: getNavItems())
         .modelContainer(previewContainer)
         .environmentObject(AppData())
 }
