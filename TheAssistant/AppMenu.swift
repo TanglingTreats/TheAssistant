@@ -12,6 +12,8 @@ struct AppMenu: View {
     @FocusState private var searchFieldIsFocused: Bool
     @EnvironmentObject var appData: AppData
     
+    @Environment(\.openWindow) private var openWindow
+
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("The Assistant")
@@ -23,17 +25,18 @@ struct AppMenu: View {
             HStack() {
                 if(appData.hasResults) {
                         Spacer()
-                        Button("Show Result", action: viewResults)
-                            .labelStyle(.titleOnly)
+                    Button("Show Result", action: viewResults)
+                    .labelStyle(.titleOnly)
                 }
             }
         }
         .padding([.all], 10)
         .environmentObject(appData)
     }
-}
-func viewResults() {
     
+    func viewResults() {
+        openWindow(id: "main")
+    }
 }
 
 #Preview {

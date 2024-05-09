@@ -26,6 +26,9 @@ struct ContentView: View {
 //                .onDelete(perform: deleteItems)
             }
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+            .navigationDestination(for: AssistType.self) { type in
+                Text("Viewing \(type.rawValue)")
+            }
 //            .toolbar {
 //                ToolbarItem {
 //                    Button(action: addItem) {

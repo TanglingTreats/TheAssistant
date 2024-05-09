@@ -11,9 +11,12 @@ import SwiftData
 @Model
 final class NavItem {
     var title: String
+    var type: AssistType
     
-    init (title: String) {
+    
+    init (title: String, type: AssistType) {
         self.title = title
+        self.type = type
     }
 }
 
@@ -21,8 +24,10 @@ final class NavItem {
 func getNavItems() -> [NavItem] {
     var navs : [NavItem] = []
     
-    let googleNav = NavItem(title: "Googling")
-    navs.append(googleNav)
+    AssistType.allCases.forEach { type in
+        let nav = NavItem(title: type.rawValue, type: type)
+        navs.append(nav)
+    }
     
     return navs
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346E4A212BEC616000BCCB1F /* AssistType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E4A202BEC616000BCCB1F /* AssistType.swift */; };
 		3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0042BEB0E040044048F /* TheAssistantApp.swift */; };
 		3488D0072BEB0E040044048F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0062BEB0E040044048F /* ContentView.swift */; };
 		3488D0092BEB0E040044048F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0082BEB0E040044048F /* Item.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		346E4A202BEC616000BCCB1F /* AssistType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistType.swift; sourceTree = "<group>"; };
 		3488D0012BEB0E040044048F /* TheAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3488D0042BEB0E040044048F /* TheAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheAssistantApp.swift; sourceTree = "<group>"; };
 		3488D0062BEB0E040044048F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				349AEAB82BEB701500424AC9 /* NavItem.swift */,
 				349AEABB2BEBB56300424AC9 /* AssistantCommands.swift */,
 				349AEABD2BEBB6C100424AC9 /* AssistantSettings.swift */,
+				346E4A202BEC616000BCCB1F /* AssistType.swift */,
 			);
 			path = TheAssistant;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				3488D0072BEB0E040044048F /* ContentView.swift in Sources */,
 				349AEABE2BEBB6C100424AC9 /* AssistantSettings.swift in Sources */,
+				346E4A212BEC616000BCCB1F /* AssistType.swift in Sources */,
 				3488D0092BEB0E040044048F /* Item.swift in Sources */,
 				3488D0162BEB1FE20044048F /* AppMenu.swift in Sources */,
 				3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */,

@@ -43,13 +43,13 @@ struct TheAssistantApp: App {
 
     var body: some Scene {
         
-        MenuBarExtra("Playground", systemImage: "tent.2.fill") {
+        MenuBarExtra("TheAssistant", systemImage: "tent.2.fill") {
             AppMenu()
                 .environmentObject(appData)
         }
         .menuBarExtraStyle(.window)
         
-        WindowGroup("The Assistant", id: "main") {
+        Window("The Assistant", id: "main") {
             ContentView()
                 .environmentObject(appData)
         }

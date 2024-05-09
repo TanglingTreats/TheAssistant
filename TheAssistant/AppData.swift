@@ -9,10 +9,12 @@ import Foundation
 
 class AppData: ObservableObject {
     @Published var hasResults: Bool
-    @Published var showWindow: Bool
+    var showWindow: Bool
+    var assist: AssistType
     
     init() {
         hasResults = false
         showWindow = false
+        assist = AssistType.search
     }
 }
