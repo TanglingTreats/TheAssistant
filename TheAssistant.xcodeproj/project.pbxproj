@@ -10,7 +10,6 @@
 		346E4A212BEC616000BCCB1F /* AssistType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E4A202BEC616000BCCB1F /* AssistType.swift */; };
 		3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0042BEB0E040044048F /* TheAssistantApp.swift */; };
 		3488D0072BEB0E040044048F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0062BEB0E040044048F /* ContentView.swift */; };
-		3488D0092BEB0E040044048F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0082BEB0E040044048F /* Item.swift */; };
 		3488D00B2BEB0E050044048F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3488D00A2BEB0E050044048F /* Assets.xcassets */; };
 		3488D00E2BEB0E050044048F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3488D00D2BEB0E050044048F /* Preview Assets.xcassets */; };
 		3488D0162BEB1FE20044048F /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488D0152BEB1FE20044048F /* AppMenu.swift */; };
@@ -26,7 +25,6 @@
 		3488D0012BEB0E040044048F /* TheAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3488D0042BEB0E040044048F /* TheAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheAssistantApp.swift; sourceTree = "<group>"; };
 		3488D0062BEB0E040044048F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3488D0082BEB0E040044048F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3488D00A2BEB0E050044048F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3488D00D2BEB0E050044048F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3488D00F2BEB0E050044048F /* TheAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheAssistant.entitlements; sourceTree = "<group>"; };
@@ -49,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342D0FC02BEDB7B800882B89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				346E4A202BEC616000BCCB1F /* AssistType.swift */,
+				3488D0192BEB2DC00044048F /* AppData.swift */,
+				349AEAB82BEB701500424AC9 /* NavItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		342D0FC12BEDB7DA00882B89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				349AEABD2BEBB6C100424AC9 /* AssistantSettings.swift */,
+				3488D0152BEB1FE20044048F /* AppMenu.swift */,
+				3488D0062BEB0E040044048F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3488CFF82BEB0E040044048F = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +86,14 @@
 		3488D0032BEB0E040044048F /* TheAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				342D0FC12BEDB7DA00882B89 /* Views */,
+				342D0FC02BEDB7B800882B89 /* Models */,
 				3488D0042BEB0E040044048F /* TheAssistantApp.swift */,
-				3488D0062BEB0E040044048F /* ContentView.swift */,
-				3488D0082BEB0E040044048F /* Item.swift */,
 				3488D00A2BEB0E050044048F /* Assets.xcassets */,
 				3488D00F2BEB0E050044048F /* TheAssistant.entitlements */,
 				3488D00C2BEB0E050044048F /* Preview Content */,
-				3488D0152BEB1FE20044048F /* AppMenu.swift */,
 				3488D0172BEB236E0044048F /* GoogleGround.swift */,
-				3488D0192BEB2DC00044048F /* AppData.swift */,
-				349AEAB82BEB701500424AC9 /* NavItem.swift */,
 				349AEABB2BEBB56300424AC9 /* AssistantCommands.swift */,
-				349AEABD2BEBB6C100424AC9 /* AssistantSettings.swift */,
-				346E4A202BEC616000BCCB1F /* AssistType.swift */,
 			);
 			path = TheAssistant;
 			sourceTree = "<group>";
@@ -166,7 +179,6 @@
 				3488D0072BEB0E040044048F /* ContentView.swift in Sources */,
 				349AEABE2BEBB6C100424AC9 /* AssistantSettings.swift in Sources */,
 				346E4A212BEC616000BCCB1F /* AssistType.swift in Sources */,
-				3488D0092BEB0E040044048F /* Item.swift in Sources */,
 				3488D0162BEB1FE20044048F /* AppMenu.swift in Sources */,
 				3488D0052BEB0E040044048F /* TheAssistantApp.swift in Sources */,
 				3488D0182BEB236E0044048F /* GoogleGround.swift in Sources */,
